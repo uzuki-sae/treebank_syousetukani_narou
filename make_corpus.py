@@ -3,8 +3,7 @@ from tqdm import tqdm
 import os
 import spacy
 nlp = spacy.load('ja_ginza')
-#infile = os.listdir("~/narouAPI/201")
-infile = "/home/uzuki/narouAPI/201/N2267BE.txt"
+infile = "your text path"
 with open(infile, 'r') as inf:
     text = inf.readlines()
 with open('word_key.json', 'w') as word_key_file:
